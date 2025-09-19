@@ -3,11 +3,11 @@ use systray::Application;
 pub fn start() -> Result<(), Box<dyn std::error::Error>> {
     let mut app = Application::new().unwrap();
 
-    let mut ico = "./bear.ico";
+    let mut ico = "./wei.ico";
     let mut path = std::env::current_dir()?;
     path.push("./src/main.rs");
     if path.exists() {
-        ico = "../res/bear.ico";
+        ico = "../res/wei.ico";
     }
 
     let ico_path = std::path::Path::new(ico);

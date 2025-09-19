@@ -1,11 +1,15 @@
 [package]
 name = "wei-tray"
-version = "0.2.6"
+version = "0.2.7"
 edition = "2021"
 description = "wei tray"
 documentation = "https://github.com/zuiyue-com/wei-tray"
 homepage = "https://github.com/zuiyue-com/wei-tray"
 license = "MIT OR Apache-2.0"
+
+[lib]
+name = "wei_tray"
+path = "src/lib.rs"
 
 [dependencies]
 wei-run = "0.3.1"
